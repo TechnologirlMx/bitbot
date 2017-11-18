@@ -1,0 +1,86 @@
+[debug] [2017-11-18T21:49:09.072Z] ----------------------------------------------------------------------
+[debug] [2017-11-18T21:49:09.075Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edyco\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-11-18T21:49:09.076Z] CLI Version:   3.15.2
+[debug] [2017-11-18T21:49:09.076Z] Platform:      win32
+[debug] [2017-11-18T21:49:09.076Z] Node Version:  v9.0.0
+[debug] [2017-11-18T21:49:09.077Z] Time:          Sat Nov 18 2017 15:49:09 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:49:09.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-18T21:49:09.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-18T21:49:09.096Z] > authorizing via signed-in user
+[debug] [2017-11-18T21:49:09.099Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/oieshy-47a76  
+ Sat Nov 18 2017 15:49:09 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:49:30.327Z] <<< HTTP RESPONSE 500
+[debug] [2017-11-18T21:49:30.328Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, An unknown error occurred. Please contact support.
+[debug] [2017-11-18T21:50:46.473Z] Error Context: {
+  "body": {
+    "error": {
+      "code": "UNKNOWN_ERROR",
+      "message": "An unknown error occurred. Please contact support."
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": "UNKNOWN_ERROR",
+        "message": "An unknown error occurred. Please contact support."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Sat, 18 Nov 2017 21:49:29 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "97",
+      "connection": "close",
+      "x-content-type-options": "nosniff"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects/oieshy-47a76",
+        "path": "/v1/projects/oieshy-47a76",
+        "href": "https://admin.firebase.com/v1/projects/oieshy-47a76"
+      },
+      "method": "GET"
+    }
+  }
+}
+[debug] [2017-11-18T21:51:05.521Z] ----------------------------------------------------------------------
+[debug] [2017-11-18T21:51:05.526Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edyco\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-11-18T21:51:05.527Z] CLI Version:   3.15.2
+[debug] [2017-11-18T21:51:05.527Z] Platform:      win32
+[debug] [2017-11-18T21:51:05.527Z] Node Version:  v9.0.0
+[debug] [2017-11-18T21:51:05.528Z] Time:          Sat Nov 18 2017 15:51:05 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:51:05.528Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-18T21:51:05.550Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-18T21:51:05.551Z] > authorizing via signed-in user
+[debug] [2017-11-18T21:51:05.555Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/oieshy-47a76  
+ Sat Nov 18 2017 15:51:05 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:51:06.086Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-18T21:51:06.088Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/oieshy-47a76/tokens  
+ Sat Nov 18 2017 15:51:06 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:51:06.516Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edyco\publid'...
+[info] 
+[debug] [2017-11-18T21:51:06.526Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/oieshy-47a76  
+ Sat Nov 18 2017 15:51:06 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:51:06.843Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-18T21:51:06.843Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/773092953091/clients/_:getWebAppConfig  
+ Sat Nov 18 2017 15:51:06 GMT-0600 (Hora estándar central (México))
+[debug] [2017-11-18T21:51:07.220Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
