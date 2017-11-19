@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="chat-app">
+<template>hellooooooo</template>
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ChatApp extends Polymer.Element {
+      static get is() { return 'chat-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'chat-app'
+          }
+        };
+      }
+
+
+    }
+
+    window.customElements.define(ChatApp.is, ChatApp);
+  </script>
+</dom-module>

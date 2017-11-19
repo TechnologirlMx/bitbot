@@ -1,0 +1,28 @@
+[debug] [2017-11-19T01:11:11.637Z] ----------------------------------------------------------------------
+[debug] [2017-11-19T01:11:11.637Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DAE\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-11-19T01:11:11.637Z] CLI Version:   3.15.2
+[debug] [2017-11-19T01:11:11.637Z] Platform:      win32
+[debug] [2017-11-19T01:11:11.637Z] Node Version:  v6.11.3
+[debug] [2017-11-19T01:11:11.637Z] Time:          Sat Nov 18 2017 19:11:11 GMT-0600 (Central Standard Time (Mexico))
+[debug] [2017-11-19T01:11:11.637Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-19T01:11:11.653Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-19T01:11:11.653Z] > authorizing via signed-in user
+[debug] [2017-11-19T01:11:11.669Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bitbit-e3420  
+ Sat Nov 18 2017 19:11:11 GMT-0600 (Central Standard Time (Mexico))
+[debug] [2017-11-19T01:11:12.011Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-19T01:11:12.011Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bitbit-e3420/tokens  
+ Sat Nov 18 2017 19:11:12 GMT-0600 (Central Standard Time (Mexico))
+[debug] [2017-11-19T01:11:12.411Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\'...
+[info] 
+[debug] [2017-11-19T01:11:12.415Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/bitbit-e3420  
+ Sat Nov 18 2017 19:11:12 GMT-0600 (Central Standard Time (Mexico))
+[debug] [2017-11-19T01:11:12.671Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-19T01:11:12.672Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/967105347126/clients/_:getWebAppConfig  
+ Sat Nov 18 2017 19:11:12 GMT-0600 (Central Standard Time (Mexico))
+[debug] [2017-11-19T01:11:12.957Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: chat
+[info] +  hosting: Local server: http://localhost:5000
+

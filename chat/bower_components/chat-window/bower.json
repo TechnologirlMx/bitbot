@@ -1,0 +1,31 @@
+{
+  "name": "chat-window",
+  "description": "A simple and flexible chat window for listing messages.",
+  "main": "chat-window.html",
+  "authors": ["Jacob Phillips (https://github.com/jifalops) <jifalops@gmail.com>"],
+  "license": "MIT",
+  "keywords": [
+    "polymer",
+    "chat-window",
+    "chat",
+    "window",
+    "messages",
+    "input"
+  ],
+  "dependencies": {
+    "polymer": "^2.0.0",
+    "paper-input": "^2.0.0",
+    "from-now": "jifalops/from-now#^0.4.0",
+    "paper-styles": "^2.0.0",
+    "paper-icon-button": "^2.0.0",
+    "iron-flex-layout": "^2.0.0",
+    "iron-icons": "^2.0.0",
+    "iron-icon": "^2.0.0"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "^2.0.0",
+    "iron-component-page": "^2.0.0",
+    "web-component-tester": "^6.0.0",
+    "webcomponentsjs": "^1.0.0"
+  }
+}
