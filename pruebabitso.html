@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title>Recoleccion de Datos</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="diff-orders-output"></div>
+
+        <script type="text/javascript">
+            var ordersCount        = 0,
+                diff_orders_output = document.getElementById('diff-orders-output');
+
+
+            websocket = new WebSocket('wss://ws.bitso.com');
+            websocket.onopen = function() {
+                websocket.send(JSON.stringify({ action: 'subscribe', book: 'btc_mxn', type: 'diff-orders' }));
+            };
+
+            websocket.onmessage = function(message){
+                var data = JSON.parse(message.data);
+
+                if (data.type != 'ka')
+                    console.log(data); // useful to show what we are receiving
+
+				if (data.type == 'diff-orders' && data.payload) {
+                    if (ordersCount == 0)
+                        diff_orders_output.innerHTML = '';
+
+                    ordersCount++;
+
+                    for (var j in data.payload) {
+					
+                        var norden = data.payload[j];
+
+                        var child = document.createElement("div");
+                        var str = '[' + norden['d'] + '] ';
+                        str += (norden['t'] == 0 ? 'compra' : 'venta') + ' orden';
+                        str += norden['a'] ? ': ' + norden['a'] + ' BTC @ ' + norden['r'] + ' MXN = ' + norden['v'] + ' MXN' : ' eliminada';
+                        child.innerHTML = str;
+                        diff_orders_output.appendChild(child);
+					}
+                }
+            };
+        </script>
+    </body>
+</html>
